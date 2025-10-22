@@ -24,7 +24,6 @@ void Task2(void *pvParams)
         // do some work
         vTaskDelay(pdMS_TO_TICKS(200));
     }
-
 }
 
 void Task3(void *pvParams)
@@ -38,9 +37,11 @@ void Task3(void *pvParams)
 
 void Supervisor(void)
 {
-    xSemaphore = xSemaphoreCreateBinary()
-
-
+    xSemaphore = xSemaphoreCreateBinary();
+    xSemaphoreGive(xSemaphore);
 
     BaseType_t l1 = xTaskCreate(Task1, "Low Priority Task", configMINIMAL_STACK_SIZE, NULL, 1, NULL)
+    BaseType_t l2 = xTaskCreate(Task2, "Med Priority Task", configMINIMAL_STACK_SIZE, NULL, 1, NULL)
+    BaseType_t l3 = xTaskCreate(Task3, "High Priority Task", configMINIMAL_STACK_SIZE, NULL, 1, NULL)
+
 }
