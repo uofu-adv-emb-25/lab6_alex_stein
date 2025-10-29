@@ -53,13 +53,13 @@ void Task_Low(void *pvParams)
 
          // do something not fun for a while
         volatile float res = 0;
-        for (int i = 0; i < 1000; i++) 
-            for (int j = 0; j < 1000; j++) 
-                for (int k = 1; k < 1000; k++) 
+        for (int i = 0; i < 100; i++) 
+            for (int j = 0; j < 100; j++) 
+                for (int k = 1; k < 100; k++) 
                     res = sqrt((float) i);
 
+        printf("Low priority task releasing semaphore now\n");
         xSemaphoreGive(xSemaphore);
-        printf("Low priority task released semaphore\n");
     }
     else
     {
@@ -84,9 +84,8 @@ int main() {
     stdio_init_all();
     sleep_ms(5000);
 
-    xSemaphore = xSemaphoreCreateBinary();
+    xSemaphore = xSemaphoreCreateMutex();
     configASSERT(xSemaphore);
-    xSemaphoreGive(xSemaphore);
 
     TaskHandle_t task;
     xTaskCreate(Task_Supervisor, "supervisor_thread", MAIN_TASK_STACK_SIZE, NULL, MAIN_TASK_PRIORITY, &task);
