@@ -1,12 +1,10 @@
 # Activity 0 Output:
-<img width="371" height="52" alt="image" src="https://github.com/user-attachments/assets/04c41a1b-7ce6-4247-a2a8-d83f871554c2" />
+<img width="361" height="55" alt="image" src="https://github.com/user-attachments/assets/13ad7411-f1f0-41fc-8994-4e0f936c9fa6" />
 
 
 # Activity 1 Output:
-
-<img width="365" height="98" alt="image" src="https://github.com/user-attachments/assets/547d2c2f-3f4a-4d95-a6b6-7dd8dae3a7fb" />
+<img width="357" height="92" alt="image" src="https://github.com/user-attachments/assets/7e738d7b-c186-4ad0-8a5f-bf28f7c815f3" />
 
 
 # Activity 2 Output:
-
-<img width="617" height="333" alt="image" src="https://github.com/user-attachments/assets/0df24eb4-104a-4d4e-8310-60a30a98f921" />
+<img width="617" height="333" alt="image" src="https://github.com/user-attachments/assets/56714805-11f5-448e-9b8a-640352fa80dc" />
