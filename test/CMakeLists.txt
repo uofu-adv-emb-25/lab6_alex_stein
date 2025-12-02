@@ -1,4 +1,4 @@
-add_executable(mytest test.c unity_config.c)
+add_executable(mytest test.c unity_config.c busy.c)
 
 target_link_libraries(mytest PRIVATE
   pico_stdlib
@@ -17,7 +17,7 @@ endif()
 
 # Modify the below lines to enable/disable output over UART/USB.
 # These are mutually exclusive, only set one.
-pico_enable_stdio_uart(mytest 0)
+pico_enable_stdio_uart(mytest 1)
 pico_enable_stdio_usb(mytest 1)
 
 # This will speed up the simulation, since data won't be copied from the flash controller.
